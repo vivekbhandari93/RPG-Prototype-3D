@@ -9,6 +9,7 @@ public class Mover : MonoBehaviour
     NavMeshAgent agent;
     Animator animator;
 
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -18,25 +19,15 @@ public class Mover : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            MoveToCursor();
-        }
         UpdateAnimator();
     }
 
-    private void MoveToCursor()
+
+    public void SetDestination(Vector3 destination)
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        bool hasHit = Physics.Raycast(ray, out hit);
-
-        if (hasHit)
-        {
-            agent.destination = hit.point;
-        }
-
+        agent.destination = destination;
     }
+
 
     private void UpdateAnimator()
     {
