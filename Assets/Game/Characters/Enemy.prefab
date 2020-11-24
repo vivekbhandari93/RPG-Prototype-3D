@@ -13,7 +13,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &-6326801910489861188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26,7 +26,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47ef7722950edef4c96cebb02b15981e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  healthPoints: 30
 --- !u!114 &6693998112823362843
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,6 +168,7 @@ PrefabInstance:
     - {fileID: 5605950496778697700, guid: 277c5e21cb0ed134aa970ec6c70b7b48, type: 3}
     - {fileID: 1603332877894448558, guid: 277c5e21cb0ed134aa970ec6c70b7b48, type: 3}
     - {fileID: -2946118128858590627, guid: 277c5e21cb0ed134aa970ec6c70b7b48, type: 3}
+    - {fileID: 3724673877171748579, guid: 277c5e21cb0ed134aa970ec6c70b7b48, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 277c5e21cb0ed134aa970ec6c70b7b48, type: 3}
 --- !u!1 &8787577875197029297 stripped
 GameObject:
