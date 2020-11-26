@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 0e51b3d2f16325549987d8d6070de3a1, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -616,6 +616,16 @@ PrefabInstance:
         type: 3}
       propertyPath: chaseDistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8739656245041106044, guid: 02beab01f44da9549b8cb28e2c4bf6c6,
+        type: 3}
+      propertyPath: patrolPath
+      value: 
+      objectReference: {fileID: 3424746416192618937}
+    - target: {fileID: 8739656245041106044, guid: 02beab01f44da9549b8cb28e2c4bf6c6,
+        type: 3}
+      propertyPath: waypointTorlerance
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8787577875197029297, guid: 02beab01f44da9549b8cb28e2c4bf6c6,
         type: 3}
@@ -1708,6 +1718,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Patrol Path
       objectReference: {fileID: 0}
+    - target: {fileID: 4286868133699573670, guid: c4a8cb710d0c18b4c9762f9a857006a8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.66
+      objectReference: {fileID: 0}
+    - target: {fileID: 4286868133699573670, guid: c4a8cb710d0c18b4c9762f9a857006a8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362903694087519186, guid: c4a8cb710d0c18b4c9762f9a857006a8,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.42
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362903694087519186, guid: c4a8cb710d0c18b4c9762f9a857006a8,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.64
+      objectReference: {fileID: 0}
     - target: {fileID: 7971529172364791849, guid: c4a8cb710d0c18b4c9762f9a857006a8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1721,7 +1751,7 @@ PrefabInstance:
     - target: {fileID: 7971529172364791849, guid: c4a8cb710d0c18b4c9762f9a857006a8,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.82
+      value: -20.06
       objectReference: {fileID: 0}
     - target: {fileID: 7971529172364791849, guid: c4a8cb710d0c18b4c9762f9a857006a8,
         type: 3}
@@ -1765,6 +1795,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c4a8cb710d0c18b4c9762f9a857006a8, type: 3}
+--- !u!114 &3424746416192618937 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3424746416192618937, guid: c4a8cb710d0c18b4c9762f9a857006a8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3424746416192618935}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d7ac611b6696324c885af1a6cbcfd36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6060275123607975592
 PrefabInstance:
   m_ObjectHideFlags: 0
