@@ -19,6 +19,9 @@ namespace RPG.Control
 
         Vector3 guardPosition;
 
+        float timeSinceLastSawPlayer = Mathf.Infinity;
+        float suspicionTime = 2f;
+
         private void Start()
         {
             fighter = GetComponent<Fighter>();
@@ -35,19 +38,47 @@ namespace RPG.Control
 
             if (InAttackRangeOfPlayer() && fighter.CanAttack(player))
             {
-                fighter.Attack(player);
+                timeSinceLastSawPlayer = 0;
+                AttackBehaviour();
             }
+
+            else if (timeSinceLastSawPlayer < suspicionTime)
+            {
+                SuspiciousBehaviour();
+            }
+
             else
             {
-                mover.StartMoveAction(guardPosition);
+                GuardBehaviour();
             }
+
+            timeSinceLastSawPlayer += Time.deltaTime;
         }
+
+        private void AttackBehaviour()
+        {
+            fighter.Attack(player);
+        }
+
+
+        private void SuspiciousBehaviour()
+        {
+            GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+
+        private void GuardBehaviour()
+        {
+            mover.StartMoveAction(guardPosition);
+        }
+
 
         private bool InAttackRangeOfPlayer()
         {
             float distanceToPlayer = Vector3.Distance(player.transform.position, transform.position);
             return distanceToPlayer < chaseDistance;
         }
+
 
         private void OnDrawGizmosSelected()
         {
