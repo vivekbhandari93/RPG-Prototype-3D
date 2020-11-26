@@ -23,6 +23,7 @@ namespace RPG.Control
             if (InteractWithCombat()) { return; }
             if(InteractWithMovement()) { return; }
         }
+        
 
         private bool InteractWithCombat()
         {
@@ -31,12 +32,14 @@ namespace RPG.Control
             foreach(RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+
+                if(target == null) { continue; }
                 
-                if(!target || target.GetComponent<Health>().IsDead()) { continue; }
+                if(!GetComponent<Fighter>().CanAttack(target.gameObject)) { continue; }
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<Fighter>().Attack(target);
+                    GetComponent<Fighter>().Attack(target.gameObject);
                 }
 
                 return true;

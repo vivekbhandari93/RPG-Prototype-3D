@@ -1132,6 +1132,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 6112081726071260838, guid: 46aa3af58ca1f5a4fbd0120a829cc437,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 46aa3af58ca1f5a4fbd0120a829cc437, type: 3}
 --- !u!4 &1485647240 stripped
@@ -1206,6 +1211,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787577875197029306, guid: 02beab01f44da9549b8cb28e2c4bf6c6,
+        type: 3}
+      propertyPath: m_Height
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 02beab01f44da9549b8cb28e2c4bf6c6, type: 3}
