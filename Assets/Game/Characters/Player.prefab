@@ -114,7 +114,12 @@ PrefabInstance:
     - target: {fileID: 1603332877894448559, guid: 277c5e21cb0ed134aa970ec6c70b7b48,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197286307599561730, guid: 277c5e21cb0ed134aa970ec6c70b7b48,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3724673877171748579, guid: 277c5e21cb0ed134aa970ec6c70b7b48, type: 3}
